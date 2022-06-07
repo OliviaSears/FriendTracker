@@ -6,4 +6,7 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {});
+Router.map(function () {
+  this.route('user-profile');
+  this.route('friend-detail', { path: '/friends/:friend_id' });
+});

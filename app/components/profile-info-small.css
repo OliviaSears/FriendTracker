@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+}
+
+.profile-pic-left {
+    align-items: center;
+    flex: 1;
+    display: flex;
+}
+
+.profile-pic-wrap {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #aaa;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-pic-style {
+    width: 100%;
+}
+
+.details-container {
+    flex: 1;
+}

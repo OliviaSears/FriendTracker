@@ -1,0 +1,23 @@
+<!--demo of basic use of "vanilla" JS and how functions work-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                alert('Hello, you have clicked the button');
+            }
+
+            function sayHelloTo(name) {
+                alert(`Hello ${name}, you have clicked the button`);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="myFunction()">Click me</button>
+        <button onclick="sayHelloTo('Olivia')">Olivia</button>
+        <button onclick="sayHelloTo('John')">John</button>
+        <button onclick="sayHelloTo('Sue')">Sue</button>
+        <button onclick="sayHelloTo('Hannah')">Hannah</button>
+    </body>
+</html>

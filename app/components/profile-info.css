@@ -1,0 +1,23 @@
+.profile-info-heading {
+    border-bottom: 1px dotted #ccc;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic-wrap {
+    height: 256px;
+    width: 256px;
+    border-radius: 50%;
+
+    overflow: hidden;
+    background-color: #aaa;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-pic {
+    width: 100%;
+}

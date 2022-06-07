@@ -1,0 +1,21 @@
+<div>
+    <div local-class="profile-pic-container"> <!--To create round image, insert img tag inside to div elements-->
+        <div local-class="profile-pic-wrap">
+            <img
+            local-class="profile-pic"
+                src={{@person.imagePath}}
+                alt="Olivia at beach" />
+        </div>
+    </div>
+
+    <h3 local-class="profile-info-heading">Name</h3>
+    <p>{{@person.name}}</p>
+    <h3 local-class="profile-info-heading">Bio</h3>
+    <p>{{@person.bio}}</p>
+    <h3 local-class="profile-info-heading">Birthday</h3>
+    <p>{{@person.birthday}}</p>
+    <h3 local-class="profile-info-heading">Interests</h3>
+    <p>{{@person.interests}}</p>
+    <h3 local-class="profile-info-heading">Age</h3>
+    <p>{{@person.age}}</p>
+</div>

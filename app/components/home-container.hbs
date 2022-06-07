@@ -1,0 +1,24 @@
+<WelcomeMessage @name={{this.myProfileData.name}} />
+<h2>Favorites</h2>
+<p>You have selected {{this.favoritesIds.length}} favorite(s).</p>
+<div local-class="grid">
+    <PeopleList 
+        @people={{this.favorites}}
+        @personClicked={{this.toggleFavorite}} 
+        />
+</div>
+<button type="button" {{on 'click' this.resetFavorites}}>Clear Favorites</button>
+<h2>Other Friends</h2>
+<div local-class="grid">
+    <PeopleList 
+        @people={{this.nonFavorites}}
+        @personClicked={{this.toggleFavorite}} 
+        />
+</div>
+
+
+
+
+
+
+

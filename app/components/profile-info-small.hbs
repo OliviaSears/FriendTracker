@@ -1,0 +1,18 @@
+<div local-class="container" {{on 'click' (fn @personClicked @person.name)}}> <!--calls method and component argument from container.hs file to implement on click--> 
+    <div local-class="profile-pic-left">
+        <div local-class="profile-pic-wrap">
+            <img
+                local-class="profile-pic" 
+                src={{@person.imagePath}}
+                alt="Someone smiling"/>
+        </div>
+    </div>
+    <div local-class="details-container">
+        <h3>Name</h3>
+        <LinkTo @route="friend-detail" @model={{@person}}>
+            <p>{{@person.name}}</p>
+        </LinkTo>
+        <h3>Age</h3>
+        <p>{{@person.age}}</p>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+{{#each @people as |person|}}
+    <div local-class="grid-item">
+        <div local-class=card> {{! {{on 'click' ( fn this.sayHelloTo this.friend1.name)}} {{! inline on click - place insite div tag }}
+            <ProfileInfoSmall @person={{person}} @personClicked={{(fn @personClicked person)}}/>
+        </div>
+    </div>
+{{/each}}

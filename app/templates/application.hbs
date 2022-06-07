@@ -1,7 +1,10 @@
-{{page-title "FriendTracker"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<LinkTo @route="index">
+   <h1>Friend Tracker</h1>
+</LinkTo>
+<LinkTo @route="user-profile">My Profile</LinkTo>
+<div class="content-container">
+   {{outlet}}
+</div>
 
-{{outlet}}
+

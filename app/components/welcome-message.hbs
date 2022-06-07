@@ -1,0 +1,9 @@
+{{#if this.shouldShowWelcomeMessage }}
+    <h2 local-class="welcome-message">Welcome to the Friend Tracker App, {{@name}}</h2>
+{{else}}
+    <p>You have hidden the welcome message.</p> 
+{{/if}}
+
+<button type="button" {{on 'click' this.toggleWelcomeMessage}}>
+    {{if this.shouldShowWelcomeMessage "Hide" "Show"}}  {{! inline if statement does not need hashtag}}
+</button>
